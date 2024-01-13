@@ -1,0 +1,171 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Orange: hsl(25, 97%, 53%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Light Grey: hsl(217, 12%, 63%)
+- Medium Grey: hsl(216, 12%, 54%)
+- Dark Blue: hsl(213, 19%, 18%)
+- Very Dark Blue: hsl(216, 12%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Family: [Overpass](https://fonts.google.com/specimen/Overpass)
+- Weights: 400, 700
+*/
+
+/* styles for desktop devices */
+@media only screen and (min-width: 992px) {
+    body {
+      font-size: 16px;
+      width: 80%;
+      margin: auto;
+      background-image: url('./faq-accordion-main/assets/images/background-pattern-desktop.svg');
+    }
+
+    .faqs{
+        background-color: var(--White);
+        border-radius: 15px 15px 15px 15px;
+        padding: 3%;
+        margin: auto;
+        size-adjust: unset;
+        min-width: 100%;
+        display: block;
+    }
+
+    .accordion .accordion-item.active .accordion-content {
+      display:flex;
+      width: 500px;
+      max-width: 90%;
+    }
+    
+  }
+  
+  /* styles for mobile devices */
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 10px;
+      width: 100%;
+      margin: 0;
+      background-image: url('./faq-accordion-main/assets/images/background-pattern-mobile.svg');
+
+    }
+
+    .faqs{
+        background-color: var(--White);
+        border-radius: 15px 15px 15px 15px;
+        padding: 3%;
+        margin: 5%;
+        -webkit-overflow-scrolling: touch;  
+    }
+
+    .accordion .accordion-item.active .accordion-content {
+      display:flex;
+      max-width: 90%;
+    }
+    
+
+  }
+
+:root {
+
+    --White: hsl(0, 0%, 100%);
+    --Light-pink: hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    font-family: 'Work Sans', serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Light-pink);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+
+
+.title {
+    display: flex;
+    gap: 0.5rem;
+    font-weight: 800;
+    font-size: 45px;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+}
+
+
+.accordion {
+    size-adjust: unset;
+  }
+  
+  .accordion-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid hsla(292, 16%, 49%, 15%);
+  }
+
+  .accordion-item:last-child {
+   
+    border-bottom: none;
+  }
+  
+  .accordion-title {
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 10px;
+    color: var(--Grayish-purple);
+    font-weight: 300;
+
+}
+
+  .active .icon-plus {
+    display: none;
+  }
+
+  .accordion .accordion-item:not(.active) .icon-minus {
+    display: none;
+  }
+
