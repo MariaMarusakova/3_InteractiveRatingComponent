@@ -15,5 +15,13 @@ function switchPage() {
 
   var ratingBox = document.getElementsByClassName('rating-box');
   ratingBox[0].classList.toggle('inactive');  
-
+  showSelectedRating();
   }
+
+  function showSelectedRating() {
+
+    const valueToShow = document.getElementsByClassName("rating-item active")[0].innerHTML;
+    const elementToUpdate = document.getElementsByClassName("selected-value");
+    elementToUpdate[0].textContent = valueToShow;
+
+}

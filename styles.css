@@ -113,8 +113,7 @@ h1{
   size-adjust: unset;
   display: block;
   align-items: center;
-  
-  
+
 }
 
 
@@ -129,17 +128,10 @@ p{
 
 }
 
-.thank-you:not(.active){
-  display: none;
-}
-
-.thank-you.active{
-  display: block;
-
-}
 
 .rating-box.inactive{
   display: none;
+  
 }
 
 .ratings {
@@ -189,4 +181,67 @@ p{
   background-color: var(--White);
   color: var(--Orange);
 }
+
+.selected-value{
+  display: inline;
+}
+
+
+.thank-you:not(.active){
+  display: none;
+}
+
+.thank-you.active{
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 2rem;
+}
+
+
+.app-icon{
+  padding-bottom: 1rem;
+}
+
+.results{
+
+  background-color: hsla(216, 12%, 54%, 0.1);
+  border-radius: 9em;  
+  width: fit-content;
+  border-style: none;
+  padding: 0.5rem 0.9em;
+  margin-left: 5em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  font-size: smaller;
+  color: var(--Orange);
+
+}
+
+.results p{
+
+  color: var(--Orange);
+
+}
+
+.thank-you-text{
+  padding-bottom: 1rem;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.thank-you:last-child{
+  padding-bottom: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.final-text{
+  font-size: smaller;
+  color: var(--Medium-Grey);
+  padding-bottom: 1rem;
+
+}
+
+
 
