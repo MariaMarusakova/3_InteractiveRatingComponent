@@ -6,3 +6,14 @@ for (i=0; i<rating.length; i++) {
         })
 
 }
+
+
+function switchPage() {
+
+  var thankYouPage = document.getElementsByClassName('thank-you');
+  thankYouPage[0].classList.toggle('active');  
+
+  var ratingBox = document.getElementsByClassName('rating-box');
+  ratingBox[0].classList.toggle('inactive');  
+
+  }

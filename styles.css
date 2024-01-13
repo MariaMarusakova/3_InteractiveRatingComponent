@@ -129,7 +129,16 @@ p{
 
 }
 
-.thank-you {
+.thank-you:not(.active){
+  display: none;
+}
+
+.thank-you.active{
+  display: block;
+
+}
+
+.rating-box.inactive{
   display: none;
 }
 
