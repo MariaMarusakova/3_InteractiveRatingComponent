@@ -1,9 +1,8 @@
-const accordion = document.getElementsByClassName('accordion-item');
+const rating = document.getElementsByClassName('rating-item');
 
-for (i=0; i<accordion.length; i++) {
-        accordion[i].addEventListener('click', function () {
+for (i=0; i<rating.length; i++) {
+        rating[i].addEventListener('click', function () {
           this.classList.toggle('active')
         })
 
 }
-      
